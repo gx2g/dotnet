@@ -1,0 +1,26 @@
+Explore documentation: https://aka.ms/dotnet-docs
+
+Report issues and find source on GitHub: https://github.com/dotnet/core
+
+Find out what's new: https://aka.ms/dotnet-whats-new
+
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+
+Write your first app: https://aka.ms/first-net-core-app
+
+
+##########################################
+Write your first app using Terminal
+
+dotnet new console --output sample1
+dotnet run --project sample1
+
+==========================================
+
+Note: when moving folders and trying to run a project again. you might need to clear locals. 
+
+dotnet nuget locals all -c
+
+clears the cache and local resources
