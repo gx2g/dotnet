@@ -1,0 +1,61 @@
+################################################################
+
+https://www.bleepingcomputer.com/download/emsisoft-emergency-kit/
+https://www.trendmicro.com/en_us/forHome/products/housecall.html
+
+################################################################
+
+### Learning C# - Working with Console.WriteLine & Variables ###
+
+Console.WriteLine("Hello World");
+string aFriend = "Bill";
+string aNewfriend = "Bobby";
+Console.WriteLine(aFriend);
+
+Console.WriteLine("Hello " + aFriend);
+Console.WriteLine($"Hello {aNewfriend}");
+Console.WriteLine($"My friends are {aFriend} and {aNewfriend}");
+
+Console.WriteLine($"The name {aFriend} has {aFriend.Length} letters.");
+Console.WriteLine($"The name {aFriend} has {aNewfriend.Length} letters.");
+
+################################################################
+
+string greeting = "      Hello World!       ";
+Console.WriteLine($"[{greeting}]");
+
+string trimmedGreeting = greeting.TrimStart();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.TrimEnd();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.Trim();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+#Notice that the Methods manipulate strings return new string objects rather than making modifications in place. Trim methods return a new string but doesn't change the original message.
+==============================================================
+
+string greeting = "                  Hello World!            ";
+Console.WriteLine($"[{greeting}]");
+
+string trimmedGreeting = greeting.TrimStart();
+Console.WriteLine($"[{trimmedGreeting}]");
+trimmedGreeting = greeting.TrimEnd();
+Console.WriteLine($"[{trimmedGreeting}]");
+trimmedGreeting = greeting.Trim();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+===============================================================
+
+string sayHello = "Hello World";
+Console.WriteLine(sayHello);
+sayHello = sayHello.Replace("Hello", "Greetings");
+Console.WriteLine(sayHello);
+
+#Using the Replace method, takes two parameters
+
+===============================================================
+
+Console.Write(sayHello.ToUpper());
+Console.Write(sayHello.ToLower());
