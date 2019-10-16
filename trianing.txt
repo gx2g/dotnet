@@ -3,14 +3,30 @@
 https://www.bleepingcomputer.com/download/emsisoft-emergency-kit/
 https://www.trendmicro.com/en_us/forHome/products/housecall.html
 
-################################################################
+
 
 ### Learning C# - Working with Console.WriteLine & Variables ###
 
 Console.WriteLine("Hello World");
+
+# declaring a variable with a value of Bill 
 string aFriend = "Bill";
-string aNewfriend = "Bobby";
 Console.WriteLine(aFriend);
+
+# variable has been already declared so we can just call it now like this and reassign the variable value. 
+aFriend = "Krista";
+Console.WriteLine(aFriend);
+
+
+# creating a new variable with a value
+string aNewfriend = "Bobby";
+aNewfriend = "bob";
+
+
+### Graphic example of how variables work, target = value, datatype variable_name = value 
+http://portablecontacts.net/wiki/computing/abstraction-software-engineering/ 
+# read about abstraction and explain it in the video to make understanding easier.
+
 
 Console.WriteLine("Hello " + aFriend);
 Console.WriteLine($"Hello {aNewfriend}");
@@ -19,43 +35,56 @@ Console.WriteLine($"My friends are {aFriend} and {aNewfriend}");
 Console.WriteLine($"The name {aFriend} has {aFriend.Length} letters.");
 Console.WriteLine($"The name {aFriend} has {aNewfriend.Length} letters.");
 
-################################################################
+################# Do more with strings ###################################
 
 string greeting = "      Hello World!       ";
 Console.WriteLine($"[{greeting}]");
 
+#trim start method
 string trimmedGreeting = greeting.TrimStart();
 Console.WriteLine($"[{trimmedGreeting}]");
 
+#trim end method
 trimmedGreeting = greeting.TrimEnd();
 Console.WriteLine($"[{trimmedGreeting}]");
 
+#trim method / both sides
 trimmedGreeting = greeting.Trim();
 Console.WriteLine($"[{trimmedGreeting}]");
 
-#Notice that the Methods manipulate strings return new string objects rather than making modifications in place. Trim methods return a new string but doesn't change the original message.
-==============================================================
-
-string greeting = "                  Hello World!            ";
-Console.WriteLine($"[{greeting}]");
-
-string trimmedGreeting = greeting.TrimStart();
-Console.WriteLine($"[{trimmedGreeting}]");
-trimmedGreeting = greeting.TrimEnd();
-Console.WriteLine($"[{trimmedGreeting}]");
-trimmedGreeting = greeting.Trim();
-Console.WriteLine($"[{trimmedGreeting}]");
+#Notice that the Methods manipulate strings return new string objects rather than making modifications in place. 
+#Trim methods return a new string but doesn't change the original message.
 
 ===============================================================
+#Replace method takes two parameters
 
 string sayHello = "Hello World";
 Console.WriteLine(sayHello);
 sayHello = sayHello.Replace("Hello", "Greetings");
 Console.WriteLine(sayHello);
 
-#Using the Replace method, takes two parameters
+#Using the Replace method, takes two parameters, The first string is the text to search for. The second string is the text to replace it with
 
-===============================================================
+Two other useful methods make a string ALL CAPS or all lower case. 
 
 Console.Write(sayHello.ToUpper());
 Console.Write(sayHello.ToLower());
+
+
+################# Search strings ###################################
+
+string songLyrics = "You say goodbye, and I say Hello";
+Console.WriteLine(songLyrics.Contains("goodbye"));
+Console.WriteLine(songLyrics.Contains("greeting"));
+
+# Contains method returns a boolean value ( True or False)
+
+# Also use, StartsWith(), and EndsWith() 
+
+Console.WriteLine(songLyrics.StartsWith("goodbye"));
+Console.WriteLine(songLyrics.EndsWith("greeting"));
+
+# Watch your punctuation when you test for the text at the end of the string. 
+# If the string ends with a period, you must check for a string that ends with a period.
+
+####################################################################
