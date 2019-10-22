@@ -1,0 +1,25 @@
+https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1
+
+String interpolation
+
+# If you add a $ before the opening quotes of the string, you can then include string values, like the name variable, inside the string in curly brackets.
+
+Console.WriteLine($"Hello {name}!");
+
+
+#Using Methods to invoke on a string ToUpper() 
+
+Console.WriteLine($"Hello {name.ToUpper()}!");
+
+Collections hold multiple values of the same type.
+
+Replace the name variable with a names variable that has a list of names. Then use a foreach loop to iterate over all the names and say hello to each person.
+
+ var names = new List<string> { "Ana", "Felipe", "Emillia" };
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+
+=====================================================================
+https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp
