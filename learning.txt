@@ -14,8 +14,8 @@ Write your first app: https://aka.ms/first-net-core-app
 ##########################################
 Write your first app using Terminal
 
-dotnet new console --output sample1
-dotnet run --project sample1
+dotnet new console --output Helloworld
+dotnet run --project Helloworld
 
 ==========================================
 
